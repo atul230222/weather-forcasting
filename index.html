@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Forecast App</title>
+
+    <meta name="description"
+        content="Modern Weather Forecast Application built using HTML, CSS and JavaScript">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>
+            <i class="fa-solid fa-cloud-sun"></i>
+            Weather Forecast
+        </h1>
+
+        <p class="subtitle">
+            Check the current weather of any city
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter city name..."
+                autocomplete="off">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Fetching Weather...</p>
+        </div>
+
+        <div id="weatherResult">
+
+            <div class="default-message">
+
+                <i class="fa-solid fa-cloud fa-3x"></i>
+
+                <h3>Weather Information</h3>
+
+                <p>
+                    Search for a city to view the latest weather forecast.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
